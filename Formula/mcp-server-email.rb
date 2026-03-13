@@ -5,20 +5,20 @@
 class McpServerEmail < Formula
   desc "Multi-account IMAP/SMTP email MCP server (22 tools)"
   homepage "https://github.com/boutquin/mcp-server-email"
-  version "1.0.0"
+  version "1.0.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/boutquin/mcp-server-email/releases/download/v1.0.0/mcp-server-email_1.0.0_darwin_amd64.tar.gz"
-      sha256 "e873fffb523dcac72a57e55a5732e2b8285997015143c7ee0732ac4b2e498db3"
+      url "https://github.com/boutquin/mcp-server-email/releases/download/v1.0.1/mcp-server-email_1.0.1_darwin_amd64.tar.gz"
+      sha256 "2d91d567248b8e7329b2688d49b894b107fdc7ecdf4e54de58819c43bbb27e5d"
 
       define_method(:install) do
         bin.install "mcp-server-email"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/boutquin/mcp-server-email/releases/download/v1.0.0/mcp-server-email_1.0.0_darwin_arm64.tar.gz"
-      sha256 "83d667ffd24789cb5f351a805bdf8153b5f805944bc96addd9b20866b9d267d6"
+      url "https://github.com/boutquin/mcp-server-email/releases/download/v1.0.1/mcp-server-email_1.0.1_darwin_arm64.tar.gz"
+      sha256 "4d49b5ade9bfa744be66d601eeb94b7aadb1697ebc4c107157e0c8353307e936"
 
       define_method(:install) do
         bin.install "mcp-server-email"
@@ -28,15 +28,15 @@ class McpServerEmail < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/boutquin/mcp-server-email/releases/download/v1.0.0/mcp-server-email_1.0.0_linux_amd64.tar.gz"
-      sha256 "62dc12da58098fad7774a63e38895c77e45241265a9d978609c128af7629169f"
+      url "https://github.com/boutquin/mcp-server-email/releases/download/v1.0.1/mcp-server-email_1.0.1_linux_amd64.tar.gz"
+      sha256 "e771b4f8df0409a58096ab2f9163a42ec91de7cb34e6f47309528a9eb78afd61"
       define_method(:install) do
         bin.install "mcp-server-email"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/boutquin/mcp-server-email/releases/download/v1.0.0/mcp-server-email_1.0.0_linux_arm64.tar.gz"
-      sha256 "9b5bd1c4942d8020eb397b62380951a458e9c8ac3eff01a0155b7728a367a226"
+      url "https://github.com/boutquin/mcp-server-email/releases/download/v1.0.1/mcp-server-email_1.0.1_linux_arm64.tar.gz"
+      sha256 "6ef987e2a4c17b9d0839f53d84206153ec9c3879932519bccc148226ed62e545"
       define_method(:install) do
         bin.install "mcp-server-email"
       end
